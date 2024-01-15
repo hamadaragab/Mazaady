@@ -1,0 +1,6 @@
+framework module Pods_Mazaady_MazaadyUITests {
+  umbrella header "Pods-Mazaady-MazaadyUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="TabBarViewController" customModule="Mazaady" customModuleProvider="target">
+            <connections>
+                <outlet property="containerView" destination="Qx8-ri-Qtk" id="Koo-UA-1Gi"/>
+                <outlet property="view" destination="PLx-Ym-Mm3" id="AUe-Gw-fhw"/>
+                <outletCollection property="tabsButtons" destination="8mj-0w-TR5" collectionClass="NSMutableArray" id="R3d-XI-10T"/>
+                <outletCollection property="tabsButtons" destination="hgy-kK-dYa" collectionClass="NSMutableArray" id="Ola-U8-trT"/>
+                <outletCollection property="tabsButtons" destination="Ckf-OU-0vo" collectionClass="NSMutableArray" id="5Fv-qB-rXu"/>
+                <outletCollection property="tabsButtons" destination="Byi-uE-gFy" collectionClass="NSMutableArray" id="04Z-WO-hNW"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="PLx-Ym-Mm3">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SRr-7N-zf1">
+                    <rect key="frame" x="0.0" y="758" width="393" height="60"/>
+                    <subviews>
+                        <stackView opaque="NO" contentMode="center" distribution="fillEqually" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="EOe-aK-wPc">
+                            <rect key="frame" x="5" y="0.0" width="383" height="60"/>
+                            <subviews>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8mj-0w-TR5">
+                                    <rect key="frame" x="0.0" y="12" width="88.333333333333329" height="36"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                    <state key="normal" image="Home">
+                                        <color key="titleColor" name="grayColor"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="didChnageBars:" destination="-1" eventType="touchUpInside" id="yY7-ie-QwZ"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hgy-kK-dYa">
+                                    <rect key="frame" x="98.333333333333343" y="18" width="88.333333333333343" height="24"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                    <state key="normal" image="Discover">
+                                        <color key="titleColor" name="grayColor"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="didChnageBars:" destination="-1" eventType="touchUpInside" id="zdQ-NN-zd0"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ckf-OU-0vo">
+                                    <rect key="frame" x="196.66666666666666" y="18" width="87.999999999999972" height="24"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                    <state key="normal" image="Messages">
+                                        <color key="titleColor" name="grayColor"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="didChnageBars:" destination="-1" eventType="touchUpInside" id="o8I-V9-4dD"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Byi-uE-gFy">
+                                    <rect key="frame" x="294.66666666666669" y="18" width="88.333333333333314" height="24"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                    <state key="normal" image="Profile">
+                                        <color key="titleColor" name="grayColor"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="didChnageBars:" destination="-1" eventType="touchUpInside" id="w12-0n-Z4Y"/>
+                                    </connections>
+                                </button>
+                            </subviews>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="60" id="f2d-oD-BRt"/>
+                            </constraints>
+                        </stackView>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="EOe-aK-wPc" secondAttribute="trailing" constant="5" id="4YJ-fy-EwE"/>
+                        <constraint firstItem="EOe-aK-wPc" firstAttribute="top" secondItem="SRr-7N-zf1" secondAttribute="top" id="OO4-Vn-wEP"/>
+                        <constraint firstItem="EOe-aK-wPc" firstAttribute="leading" secondItem="SRr-7N-zf1" secondAttribute="leading" constant="5" id="wA9-nN-IFy"/>
+                        <constraint firstAttribute="bottom" secondItem="EOe-aK-wPc" secondAttribute="bottom" id="zzh-FL-Ks2"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Qx8-ri-Qtk">
+                    <rect key="frame" x="0.0" y="0.0" width="393" height="758"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="yRX-6R-w31"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="Qx8-ri-Qtk" firstAttribute="leading" secondItem="yRX-6R-w31" secondAttribute="leading" id="Ehn-kC-FbS"/>
+                <constraint firstItem="yRX-6R-w31" firstAttribute="trailing" secondItem="Qx8-ri-Qtk" secondAttribute="trailing" id="cbm-5r-9P4"/>
+                <constraint firstItem="yRX-6R-w31" firstAttribute="trailing" secondItem="SRr-7N-zf1" secondAttribute="trailing" id="rNa-Ie-tOe"/>
+                <constraint firstItem="SRr-7N-zf1" firstAttribute="top" secondItem="Qx8-ri-Qtk" secondAttribute="bottom" id="rcL-V4-LLE"/>
+                <constraint firstItem="SRr-7N-zf1" firstAttribute="leading" secondItem="PLx-Ym-Mm3" secondAttribute="leading" id="saT-p2-QFx"/>
+                <constraint firstItem="Qx8-ri-Qtk" firstAttribute="top" secondItem="PLx-Ym-Mm3" secondAttribute="top" id="xiP-nD-b1r"/>
+                <constraint firstItem="yRX-6R-w31" firstAttribute="bottom" secondItem="SRr-7N-zf1" secondAttribute="bottom" id="xlh-nE-1tk"/>
+            </constraints>
+            <point key="canvasLocation" x="79" y="20"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="Discover" width="24" height="24"/>
+        <image name="Home" width="24" height="36"/>
+        <image name="Messages" width="24" height="24"/>
+        <image name="Profile" width="24" height="24"/>
+        <namedColor name="grayColor">
+            <color red="0.32899999618530273" green="0.32400000095367432" blue="0.4779999852180481" alpha="0.33000001311302185" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
